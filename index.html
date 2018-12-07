@@ -1,0 +1,70 @@
+<!-- encontrei o template pronto em https://codepen.io/nedev/pen/EVaGqW, mas realizei algumas adaptações para que
+se adequasse ao nosso trabalho, trechos esses que deixarei sinalizado para consulta se por ventura for necessário verificar -->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>reVIVA - LogIn</title><!-- AQUI -->
+  <link rel="shortcut icon" href="imagens/favicon.png" />
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'><!-- AQUI -->
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id="login-button">
+  <img src="http://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+  </img>
+</div>
+<div id="container">
+  <h1 style="top:10px;"><img src="imagens/Reviva Logo.png" style="width:80%;"></h1><!-- AQUI -->
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form method="POST" action="login.php"><!-- AQUI -->
+    <input type="text" name="login" id="login" placeholder="Login">
+    <input type="password" name="senha" id="senha" placeholder="Senha"><!-- AQUI -->
+    <a><input type="submit" class="esp" id="entrar" name="entrar" value="Entrar"></a>
+    <div id="remember-container">
+<!--  <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      <span id="remember">Lembrar-me</span>
+      <span id="forgotten">Esqueci a senha</span> --> <!-- AQUI -->
+    </div>
+</form>
+</div>
+
+<!-- Forgotten Password Container -->
+<div id="forgotten-container">
+   <h1>Recuperar senha</h1>
+  <span class="close-btn">
+    <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="E-mail">
+    <a href="#" class="orange-btn">Consiga uma nova senha</a>
+</form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+	
+<!-- AQUI -->	
+<div style="position: absolute; bottom:0; left: 50%; margin-right: -50%; transform: translate(-50%, -5%); text-align:center;
+ color:#FFFFFF;font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+<p> Essa tela é uma adaptação de um template encontrado pronto na internet <br>
+	Copyright (c) 2017 by Kamen Nedev (http://codepen.io/nedev/pen/EVaGqW) </p>
+</div>
+
+
+</body>
+</html>
